@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-weight: 100;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+}
+
+input[type="text"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+input[type="submit"] {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  outline: none;
+  color: white;
+}
+
+.radioBtn {
+  width: 25px;
+  height: 25px;
+}
+
+.radioButtons {
+  visibility: hidden;
+}
+
+#error {
+  padding: 10px;
+}
+
+#weatherData {
+  box-shadow: 0 8px 22px 0 rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  width: 736px;
+  height: 500px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  padding: 10px;
+}
+
+#innerWrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+}
+
+#innerWrapper2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.forecast {
+  padding: 10px;
+  text-align: center;
+}
+
+#rowL {
+  width: 60%;
+  padding: 30px;
+}
+
+#rowL h2 {
+  font-size: 2.5em;
+}
+
+#rowR {
+  width: 40%;
+  text-align: center;
+  padding: 30px;
+}
+
+img {
+  height: 90px;
+}
+
+#weatherDisplay {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  align-items: center;
+}
+.row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 25px;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: column;
+}
+
+#wrapper {
+  width: 750px;
+  height: 400px;
+}
+
+#formElem {
+  text-align: center;
+}
+
+#outerWrapper {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.night {
+  background: #485563;
+  background: -webkit-linear-gradient(to right, #29323c, #485563);
+  background: linear-gradient(to right, #29323c, #485563);
+}
+
+.sky {
+  background-color: #6a93cb;
+  background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+}

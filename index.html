@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather app</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="CurrentWeather.js"></script>
+    <script defer src="ForecastWeather.js"></script>
+    <script defer src="InputHandler.js"></script>
+    <script src="HashMaps.js"></script>
+    <script src="Api.js"></script>
+  </head>
+
+  <body>
+    <div id="outerWrapper">
+      <h1 class="title">Search for any city and see the weather</h1>
+      <div id="formElem">
+        <form id="form">
+          <input type="text" id="city" />
+          <input type="submit" value="Search" />
+        </form>
+        <h3 id="error"></h3>
+      </div>
+      <div id="wrapper">
+        <div id="weatherData">
+          <div class="radioButtons">
+            <input
+              class="radioBtn"
+              type="radio"
+              id="radio-one"
+              name="switch"
+              value="Metric"
+              checked
+            />
+            <label for="radio-one"><b>°C</b></label>
+            <input
+              class="radioBtn"
+              type="radio"
+              id="radio-two"
+              name="switch"
+              value="Imperial"
+            />
+            <label for="radio-two"><b>°F</b></label>
+          </div>
+          <div id="innerWrapper">
+            <!-- Wrapper for current weather -->
+          </div>
+          <div id="innerWrapper2">
+            <!-- Wrapper for weather forecast -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
